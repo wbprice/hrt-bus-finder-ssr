@@ -16,5 +16,34 @@ module.exports = {
   /**
    * The host to bind the web server to
    */
-  host: process.env.HOST || '0.0.0.0'
+  host: process.env.HOST || '0.0.0.0',
+
+  plugins: [
+    {
+        register: require('vision'),
+        options: {}
+    },
+    {
+        register: require('inert'),
+        options: {}
+    }
+  ],
+    
+  onPluginsLoaded(err) {
+    if (err) {
+        this.log.info(err);
+    }
+
+    /**
+     * Views
+     */
+    this.packs.hapi.server.views({
+      engines: {
+          html: require('handlebars')
+      },
+      path: 'templates',
+      partialsPath: 'templates/partials/'
+    })
+  },
+
 }
