@@ -19,6 +19,7 @@
     "trailpack-repl": "v2-latest",
     "trailpack-router": "v2-latest",
     "trails": "v2-latest",
+    "trails-service": "^2.0.0",
     "winston": "^2.3"
   },
   "devDependencies": {
