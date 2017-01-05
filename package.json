@@ -1,0 +1,41 @@
+{
+  "name": "hrt-bus-finder-ssr",
+  "version": "0.0.0",
+  "description": "Prototype for a server-side-rendered HRT bus app.",
+  "homepage": "http://hrtb.us/",
+  "author": {
+    "name": "wbprice",
+    "email": "1wbprice@gmail.com",
+    "url": "http://wbprice.com/"
+  },
+  "main": "index.js",
+  "keywords": [
+    "",
+    "trails",
+    "trailsjs"
+  ],
+  "dependencies": {
+    "trailpack-hapi": "^2.2.0",
+    "trailpack-repl": "v2-latest",
+    "trailpack-router": "v2-latest",
+    "trails": "v2-latest",
+    "winston": "^2.3"
+  },
+  "devDependencies": {
+    "eslint": "^2.11",
+    "eslint-config-trails": "^2",
+    "mocha": "^2.5",
+    "supertest": "^1.2"
+  },
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "repository": "git@github.com:Code4HR/hrt-bus-finder-ssr.git",
+  "license": "MIT"
+}
